@@ -57,7 +57,7 @@ int SumA2(int A[], int n)
 //数组求和：二分递归
 
 //入口形式为 SumA3(A,0,n-1)
-int SumA3(int A[], int lo, int hi)
+int SumA3(int *A, int lo, int hi)
 {
 	//区间范围A[lo,hi]
 	if (lo == hi)
