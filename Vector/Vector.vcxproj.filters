@@ -15,44 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vector.h">
+    <ClInclude Include="Vector.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Vector_Include.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Vector_copyFrom.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_expand.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_insert.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_remove.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_shrink.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_find.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_deduplicate.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_traverse.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_disordered.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_search.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector_uniquify.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

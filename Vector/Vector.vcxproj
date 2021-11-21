@@ -139,19 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Vector.h" />
-    <ClInclude Include="Vector_copyFrom.hpp" />
-    <ClInclude Include="Vector_deduplicate.hpp" />
-    <ClInclude Include="Vector_disordered.hpp" />
-    <ClInclude Include="Vector_expand.hpp" />
-    <ClInclude Include="Vector_find.hpp" />
+    <ClInclude Include="Vector.hpp" />
     <ClInclude Include="Vector_Include.h" />
-    <ClInclude Include="Vector_insert.hpp" />
-    <ClInclude Include="Vector_remove.hpp" />
-    <ClInclude Include="Vector_search.hpp" />
-    <ClInclude Include="Vector_shrink.hpp" />
-    <ClInclude Include="Vector_traverse.hpp" />
-    <ClInclude Include="Vector_uniquify.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
