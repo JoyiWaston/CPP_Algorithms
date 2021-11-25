@@ -200,6 +200,21 @@ void Vector<T>::shrink()
 }
 
 
+//乱序
+template <typename T> 
+void Vector<T>::unsort(Rank lo, Rank hi) 
+{ 
+	srand((unsigned int)time(NULL));
+	//等概率随机置乱区间[lo, hi)
+	T* V = _elem + lo; //将子向量_elem[lo, hi)视作另一向量V[0, hi - lo)
+	
+	for (Rank i = hi - lo; i > 0; i--) //自后向前
+	{
+		swap(V[i - 1], V[rand() % i]); //将V[i - 1]与V[0, i)中某一元素随机交换
+	}
+}
+
+
 //唯一化：算法
 //应用实例：网络搜索 的局部结果经过去重操作，汇总为最终报告
 
@@ -573,15 +588,14 @@ void Vector<T>::mergeSort(Rank left, Rank right)
 template <typename T> 
 void Vector<T>::sort(Rank left, Rank rigth) 
 { //向量区间[left, right)排序
-	//srand((unsigned int)time(NULL));
-	//switch (rand()%6) 
-	//{
-	//	case 1:  bubbleSort(left, rigth); break; //起泡排序
-	//	case 2:  selectionSort(left, rigth); break; //选择排序
-	//	case 3:  mergeSort(left, rigth); break; //归并排序
-	//	case 4:  heapSort(left, rigth); break; //堆排序
-	//	case 5:  quickSort(left, rigth); break; //快速排序
-	//	default: shellSort(left, rigth); break; //希尔排序
-	//}
-
+	srand((unsigned int)time(NULL));
+	switch (rand()%6) 
+	{
+		case 1:  bubbleSort(left, rigth); break; //起泡排序
+		case 2:  selectionSort(left, rigth); break; //选择排序
+		case 3:  mergeSort(left, rigth); break; //归并排序
+		case 4:  heapSort(left, rigth); break; //堆排序
+		case 5:  quickSort(left, rigth); break; //快速排序
+		default: shellSort(left, rigth); break; //希尔排序
+	}
 }
