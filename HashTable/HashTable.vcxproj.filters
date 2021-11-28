@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stack.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="RPN.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Queue.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="SqStack.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="SqQueue.hpp">
+    <ClInclude Include="HashTable.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

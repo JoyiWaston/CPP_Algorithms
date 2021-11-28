@@ -1,4 +1,6 @@
 #include "Stack.hpp"
+#include "SqStack.hpp"
+#include "SqQueue.hpp"
 
 //1、进制转换（逆序输出）
 void convert(Stack<char>& S, __int64 n, int base)
@@ -66,13 +68,62 @@ void test02()
 //禁形(312)
 
 
+//SqStack
+void test03()
+{
+	SqStack<int> s = SqStack<int>(6);
+	int temp = 0;
 
+	s.Push(23);
+	s.Push(56);
+	s.Push(11);
+
+	temp = s.Pop();
+	cout << temp << " ";
+
+	s.Push(4);
+	temp = s.Pop();
+	cout << temp << " ";
+	temp = s.Pop();
+	cout << temp << " ";
+	cout << endl;
+	s.Push(87);
+	s.Push(98);
+	cout << "此时栈顶元素为：" << s.Top() << endl;
+
+	temp = s.Pop();
+	cout << temp << " ";
+	temp = s.Pop();
+	cout << temp << " ";
+	temp = s.Pop();
+	cout << temp << endl;
+
+	
+}
+
+void test04()
+{
+	SqQueue<int> q = SqQueue<int>(6);//创建队列
+	for (int i = 0; i < 6; i++)
+	{
+		q.enqueue(i * 3);
+	}
+
+	for (int i = 0; i < 6; i++)
+	{
+		int temp = q.dequeue();
+		cout << temp << " ";
+	}
+	cout << endl;
+}
 
 
 int main()
 {
 	//test01();//进制转换
-	test02();//符号匹配
+	//test02();//符号匹配
+	//test03();//栈
+	test04();
 
 	return 0;
 }
